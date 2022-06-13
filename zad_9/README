@@ -1,0 +1,23 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 10.06.2022
+Opis projektu: Folder zad_9 zawiera rozwiązanie zadania 9 z laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_9':
+- niniejszy plik README
+- plik Makefile
+- zad_9.c - plik źródłowy z rozwiązaniem
+
+=====================================================================================================================
+Aby skompilować program z zadania 9 należy użyć komendy: 'make build'.
+Do uruchomienia progrmu można wykorzystać komendę 'make run'.
+Czyszczenie katalogu zad_9 odbywa się przy pomocy komendy 'make clean'.
+
+=====================================================================================================================
+Projekt służy demonstracji działania wątków w systemach typu UNIX.
+W trakcie działania programu można obserwować wzajemne wyklucznie
+się wątków (przy wejściach do sekcji krytycznych).
+Po zakończeniu działania wszystkich wątków wyświetlany jest stan
+licznika globalnego wraz z wartością oczekiwaną.

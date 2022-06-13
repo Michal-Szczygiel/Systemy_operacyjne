@@ -1,0 +1,10 @@
+Uzupełnienie dla zadania 2.
+Przy wywołaniu funkcji 'fork-exec' jak w zadaniu powstaną 3 nowe procesy.
+
+Przy n-krotnym wywołaniu funkcji 'fork' powstanie n dodatkowych (licząc bez procesu macierzystego)
+procesów.
+
+Dlaczego tylko 3 nowe procesy?
+Funkcja 'execlp' zastępuje aktualny obraz procesu obrazem nowego procesu (uruchamianego programu).
+Dlatego sytuacja tutaj wygląda inaczej niż w poprzednich zadaniach, tutaj procesy potomne nie
+wykonują kopii procesu macierzystego - bo jego obraz jest zastąpiony innym programem.

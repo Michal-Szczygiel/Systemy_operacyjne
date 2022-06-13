@@ -1,0 +1,24 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 01.06.2022
+Opis projektu: Folder zad_8 zawiera rozwiązanie zadania 8 z laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_8':
+- niniejszy plik README
+- plik Makefile
+- server.c - plik źródłowy serwera
+- client.c - plik źródłowy klienta
+- utility.h - plik nagłówkowy biblioteki pomocniczej
+- utility.c - plik źródłowy biblioteki pomocniczej
+
+=====================================================================================================================
+Aby skompilować programy z zadania 8 należy użyć komendy: 'make build'.
+Programy należy uruchamiać ręczenie w osobnych terminalach, przy czym istotne jest aby program serwera 
+uruchomić jako pierwszy.
+Czyszczenie katalogu 'zad_8': 
+- komenda: 'make clean'
+
+=====================================================================================================================
+Projekt służy demonstracji działania kolejek komunikatów w systemach operacyjnych typu UNIX.

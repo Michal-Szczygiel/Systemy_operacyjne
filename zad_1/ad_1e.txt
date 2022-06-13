@@ -1,0 +1,34 @@
+Uzupełnienie dla podpunktu e)
+
+W tym przypadku (3 x wywołanie fork w pętli) powstanie 8 procesów:
+- proces macierzysty (tworzony przez system)
+- 7 procesów potomnych tworzonych przy pomocy 'fork' i kontrolowanych przez proces macierzysty
+
+Przykład na drzewie (dla przypadku z zadania):
+                        ________
+                        |
+                ________|
+                |       |
+                |       |_______
+        ________|       
+        |       |       ________
+        |       |       |
+        |       |_______|
+        |               |
+        |               |_______
+        |       
+        |               ________
+        |               |
+        |       ________|
+        |       |       |
+        |       |       |_______
+        |       |
+        |       |       ________
+        |       |       |
+        |       |       |
+-----------------------------------    <- proces macierzysty
+
+
+Ujęcie ogóle: przy n-krotnym wywołaniu funkcji 'fork' powstaje 2^n procesów (włączając macierzysty)
+Dlaczego?: Można popatrzeć na drzewo powyżej, widać, że każdy 'fork' powoduje "rozszczepienie" procesu na dwa.
+Można tu zastosować analogię do podziału bakterii w próbce (wzrost wykładniczy o podstawie 2).

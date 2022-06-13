@@ -1,0 +1,29 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 12.03.2022
+Opis projektu: Folder zad_2 zawiera rozwiązanie zadania 2 z II laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_2':
+- niniejszy plik README
+- plik Makefile
+- pliki źródłowe z kodem w języku C dla kolejnych podpunktów zadania 1:
+    - zad_1a.c
+    - zad_2.c
+- plik z adnotacją:
+    - ad_2.txt
+
+=====================================================================================================================
+Aby skompilować i uruchomić program dla zadania 2 należy użyć odpowiedniej komendy run_:
+- make run_2 (kompiluje zad_2.c oraz zad_1a i uruchamia program zad_2.x)
+
+Aby wykonać czyszczenie katalogu zad_2 z produktów kompilacji należy użyć komendy: make clean
+
+=====================================================================================================================
+Co robi program w zadaniu 2?
+Niniejszy program jest modyfikacją programu z zadania 1 podpunkt b. Komunikaty procesów potomnych wysyłane są
+przez program (identyczny jak w zadaniu 1, podpunkt a). Uruchomienie programu w wątku potomym odbywa się z
+wykorzystaniem funkcji 'execlp'.
+
+=====================================================================================================================

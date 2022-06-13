@@ -1,0 +1,26 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 09.05.2022
+Opis projektu: Folder zad_6 zawiera rozwiązanie zadania 6 z laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_6':
+- niniejszy plik README
+- plik Makefile
+- powielacz.c - plik źródłowy programu nadzorującego
+- proces.c - plik źródłowy programu uruchamianego w procesach potomnych
+- sem_lib.h - plik nagłówkowy biblioteki pomocniczej
+- sem_lib.c - plik źródłowy biblioteki pomocniczej
+
+=====================================================================================================================
+Aby skompilować programy z zadania 6 należy użyć komendy: 'make build'.
+Uruchomienie programu można wykonać za pomocą komendy 'make run'.
+Czyszczenie katalogu 'zad_6' - komenda: 'make clean'
+
+=====================================================================================================================
+Uruchomiony program nadzorujący tworzy n procesów potomnych (należy podać liczbę w pliku Makefile). Każdy proces potomny
+uruchamia program o zadanej liczbie sekcji krytycznych (również sprecyzowane w pliku Makefile). Na ekranie wypisywane
+jest podsumownie wejść i wyjść z sekcji krytycznych w procesach potomnych. Dodatkowo program nadzorujący tworzy plik
+z liczbą która jest z zwiększana w kolejnych sekcjach krytycznych procesów potomnych (o jeden). Na koniec program
+nadzorujący porównuje liczbę z pliku z liczbą oczekiwaną i wyświetla stosowny komunikat.

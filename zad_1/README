@@ -1,0 +1,41 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 12.03.2022
+Opis projektu: Folder zad_1 zawiera rozwiązania podpunktów a-e zadania 1 z II laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_1':
+- niniejszy plik README
+- plik Makefile
+- pliki źródłowe z kodem w języku C dla kolejnych podpunktów zadania 1:
+    - zad_1a.c
+    - zad_1b.c
+    - zad_1c.c
+    - zad_1d.c
+    - zad_1e.c
+- pliki z adnotacjami do zadań:
+    - ad_1c.txt
+    - ad_1d.txt
+    - ad_1e.txt
+
+=====================================================================================================================
+Aby skompilować i uruchomić program dla każdego z podpunktów zadania 1 należy użyć odpowiedniej komendy run_:
+- zadanie 1 a) - make run_1a
+- zadanie 1 b) - make run_1b
+- ...
+
+Aby wykonać czyszczenie katalogu zad_1 z produktów kompilacji należy użyć komendy: make clean
+
+=====================================================================================================================
+Co robią programy w zadaniu 1?
+- a) program wypisuje identyfikatory UID, GID, PID, PPID i PGID dla danego procesu
+- b) 3 krotne wywołanie 'fork' i czekanie na procesy potomne przy pomocy funkcji 'wait', proces macierzysty jak i jego 
+    potomne wyświetlają podsumowanie analogiczne jak w podpunkcie a)
+- c) analogicznie jak w b) tylko tym razem czekanie odbywa się przy pomocy funkcji 'sleep', procesy potomne adoptowane
+    są przez proces systemowy 'init' (w moim systemie)
+- d) analogicznie jak w b) tylko tym razem funkcja 'sleep' umieszczona jest w takich miejscach, że procesy potomne wyświetlają 
+    swoje podsumowania pokoleniami, chronologicznie
+- e) analogicznie jak w b) tylko tym razem procesy potomne są ustawiane jako liderzy swoich własnych grup
+
+=====================================================================================================================

@@ -1,0 +1,24 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 11.04.2022
+Opis projektu: Folder zad_4 zawiera rozwiązanie  zadania 4 z laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_4':
+- niniejszy plik README
+- plik Makefile
+- zad_4.c - plik źródłowy z rozwiązaniem
+- data.txt - plik zawierający dane testowe dla programu
+
+=====================================================================================================================
+Aby skompilować program z zadania 4 należy użyć komendy: 'make build'.
+Uruchomienie programu można wykonać za pomocą komendy (nastąpi także sprawdzenie identyczności plików: 
+    źródłowego i wynikowego): 'make run'.
+Czyszczenie katalogu 'zad_4' - komenda: 'make clean'
+
+=====================================================================================================================
+Uruchomiony program odczytuje dane tekstowe z pliku 'data.txt' i wysyła je (przy pomocy potoku) do swojego procesu
+potomnego, który zapisuje te dane do pliku 'output_file.txt'. Wielkość pakietów jest ustalona na 64 bajty,
+wprowadzane są loswe opóźnienia w przesyle i odczycie danych. Po zakończeniu procedury przesyłu (zakończeniu 
+działania programu głównego) wykonywane jest sprawdzenie identyczności plików: źródłowego i wynikowego.

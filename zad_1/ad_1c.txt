@@ -1,0 +1,15 @@
+Uzupełnienie dla podpunktu c)
+Przykładowe drzewo (wygenerowane przy pomocy komendy 'pstree -p'), można zauważyć, że osierocone procesy są adoptowane przez proces systemowy 'init':
+
+
+init(1)─┬─init(100)───init(101)─┬─sh(102)───sh(103)───sh(108)───node(112)─┬─node(132)─┬─zsh(306)─┬─make(860)───zad_1c.x(861)───zad_1c.x(862)───zad_1c.x(863)───zad_1c.x(864)
+        │                       │                                         │           │          └─pstree(977)
+        │                       │                                         │           ├─{node}(133)
+        │                       │                                         │           ├─{node}(134)
+        │                       │                                         │           ├─{node}(135)
+        │                       │                                         │           ├─{node}(136)
+        │                       │                                         │           ├─{node}(137)
+        │                       │                                         │           ├─{node}(138)
+        .                       .                                         .           .
+        .                       .                                         .           .
+        .                       .                                         .           .

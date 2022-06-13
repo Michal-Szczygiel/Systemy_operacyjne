@@ -1,0 +1,26 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 20.04.2022
+Opis projektu: Folder zad_5 zawiera rozwiązanie zadania 5 z laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_5':
+- niniejszy plik README
+- plik Makefile
+- zad_5.c - plik źródłowy programu nadzorującego
+- prod.c - plik źródłowy producenta
+- cons.c - plik źródłowy konsumenta
+- data_file.txt - plik zawierający dane testowe dla programu
+
+=====================================================================================================================
+Aby skompilować program z zadania 5 należy użyć komendy: 'make build'.
+Uruchomienie programu można wykonać za pomocą komendy (nastąpi także sprawdzenie identyczności plików: 
+    źródłowego i wynikowego): 'make run'.
+Czyszczenie katalogu 'zad_5' - komenda: 'make clean'
+
+=====================================================================================================================
+Uruchomiony program odczytuje dane tekstowe z pliku 'data_file.txt' i wysyła je (przy pomocy potoku nazwanego) do swojego procesu
+potomnego, który zapisuje te dane do pliku 'output_file.txt'. Wielkość pakietów jest ustalona na 128 bajtów,
+wprowadzane są loswe opóźnienia w przesyle i odczycie danych. Po zakończeniu procedury przesyłu (zakończeniu 
+działania programu głównego) wykonywane jest sprawdzenie identyczności plików: źródłowego i wynikowego.

@@ -1,0 +1,44 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 28.03.2022
+Opis projektu: Folder zad_3 zawiera rozwiązania podpunktów a-c zadania 3 z IV laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_3':
+- niniejszy plik README
+- plik Makefile
+- pliki źródłowe z kodem w języku C dla kolejnych podpunktów zadania 3:
+    - zad_3a.c
+    - zad_3b.c
+    - zad_3c.c
+    - zad_3c_backup.c (pokazana na ćwiczeniach wersja programu)
+
+=====================================================================================================================
+Aby skompilować wszystkie programy z zadania 3 należy użyć komendy 'make all'. Problematyka zadania uzasadnia
+kompilację wszystkich programów jednocześnie.
+
+Aby wykonać czyszczenie katalogu zad_3 z produktów kompilacji należy użyć komendy 'make clean'
+
+=====================================================================================================================
+Jak uruchamiać skompilowane programy?
+  - podpunkt a) ./zad_3a.x {numer sygnału} {opcja obsługi} , gdzie 'numer sygnału' oznacza liczbę całkowitą przypisaną
+  do danego sygnału w systemie operacyjnym a 'opcja obsługi' warunkuje w jaki sposób program będzie reagował na sygnał:
+    - 1: zachowanie domyślne,
+    - 2: ignorowanie sygnału,
+    - 3: obsługa szczególna przy pomocy funkcji
+
+  - podpunkt b) ./zad_3b.x {numer sygnału} {opcja obsługi} {./zad_3a.x} , jedyne co ulega tu zmianie to to, że należy
+  podać ścieżkę do programu uruchamianego w wątku potomnym (zgodnie z treścią zadania powinien to być program z podpunktu a)
+
+  - podpunkt c) ./zad_3c.x {numer sygnału} {opcja obsługi} {./zad_3a.x} , identycznie jak w podpunkcie b)
+
+=====================================================================================================================
+Co robią programy z zadania 3?
+  - podpunkt a):
+      Program do testowania zachowania aplikacji wystawionej na działanie różnych sygnałów systemowych
+      (możliwoś wybrania sposobu obsługi),
+  - podpunkt b):
+      Program do testowania zarządzania procesami potomnymi przy pomocy sygnałów systemowych.
+  - podpunkt c):
+      Podobnie jak w podpunkcie b, z tym, że tutaj następuje zarządzanie grupą procesów.

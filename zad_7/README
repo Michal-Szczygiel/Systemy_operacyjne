@@ -1,0 +1,28 @@
+=====================================================================================================================
+Autor: Michał Szczygieł
+Miejce: Kraków
+Data: 19.05.2022
+Opis projektu: Folder zad_7 zawiera rozwiązanie zadania 7 z laboratorium w ramach kursu "Systemy Operacyjne"
+
+=====================================================================================================================
+Zawartość katalogu 'zad_7':
+- niniejszy plik README
+- plik Makefile
+- super.c - plik źródłowy programu nadzorującego
+- prod.c - plik źródłowy programu producenta
+- cons.c - plik źródłowy programu konsumenta
+- memory_map.h - plik nagłówkowy biblioteki pomocniczej (obsługa pamięci współdzielonej)
+- memory_map.c - plik źródłowy biblioteki pomocniczej (obsługa pamięci współdzielonej)
+- sem_and_rest.h - plik nagłówkowy biblioteki pomocniczej (obsługa semaforów + funkcje pomocnicze)
+- sem_and_rest.c - plik źródłowy biblioteki pomocniczej (obsługa semaforów + funkcje pomocnicze)
+
+=====================================================================================================================
+Aby skompilować programy z zadania 7 w wersji z biblioteką statyczną należy użyć komendy: 'make build_static'.
+Analogicznie, wersję z biblioteką dynamiczną można dostać po wywołaniu komendy 'make build_dynamic'.
+Uruchomienie programu można wykonać za pomocą komendy 'make run'. (zarówno wersję statyczną jak i dynamiczną)
+Czyszczenie katalogu 'zad_7': 
+- komenda: 'make clean_static' - dla wersji statycznej
+- komenda: 'make clean_dynamic' - dla wersji dynamicznej
+
+=====================================================================================================================
+Projekt służy demonstracji działania pamięci współdzielonej w systemach UNIXowych.
